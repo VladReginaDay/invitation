@@ -44,7 +44,7 @@
     </div>
 
     <div class="env-seal hint" id="env-seal">
-      <img src="https://raw.githubusercontent.com/VladReginaDay/mom-and-dad/refs/heads/main/seal.png" alt="Печать">
+      <img src="https://raw.githubusercontent.com/VladReginaDay/invitation/refs/heads/main/images/seal.png" alt="Печать">
     </div>
 
   </div><div class="env-hint" id="env-hint">Коснитесь, чтобы открыть послание</div>
@@ -82,14 +82,14 @@
   <div class="childhood-polaroids reveal reveal-delay-1">
     <div class="polaroid polaroid-1">
       <div class="polaroid-photo">
-        <img src="https://raw.githubusercontent.com/VladReginaDay/mom-and-dad/refs/heads/main/Regina1.jpg" alt="Детство Регины" onerror="this.style.display='none'">
+        <img src="https://raw.githubusercontent.com/VladReginaDay/invitation/refs/heads/main/images/Regina.jpg" alt="Детство Регины" onerror="this.style.display='none'">
       </div>
       <p class="polaroid-caption">— интересно, кто будет моим мужем, когда я вырасту?</p>
     </div>
 
     <div class="polaroid polaroid-2">
       <div class="polaroid-photo">
-        <img src="https://raw.githubusercontent.com/VladReginaDay/mom-and-dad/refs/heads/main/Vlad.jpg" alt="Детство Владислава" onerror="this.style.display='none'">
+        <img src="https://raw.githubusercontent.com/VladReginaDay/invitation/refs/heads/main/images/Vlad.jpg" alt="Детство Владислава" onerror="this.style.display='none'">
       </div>
       <p class="polaroid-caption">— им буду я 🤍</p>
     </div>
@@ -256,7 +256,7 @@
   <div class="venue-illustration reveal reveal-delay-1" style="position:relative;overflow:hidden;border-radius:16px;">
 
     <img
-      src="https://raw.githubusercontent.com/VladReginaDay/mom-and-dad/refs/heads/main/maryanino-illustration.png"
+      src="https://raw.githubusercontent.com/VladReginaDay/invitation/refs/heads/main/images/maryanino-illustration.png"
       alt="Усадьба Марьянино осенью"
       style="width:100%;display:block;border-radius:16px;object-fit:cover;"
     />
@@ -495,7 +495,7 @@
       <label class="rsvp-label">Что предпочитаете из напитков? <span style="font-weight:300;opacity:0.7;">(можно выбрать несколько)</span></label>
       <div class="rsvp-check-group">
         <label class="rsvp-check-opt"><input type="checkbox" name="drinks" value="Игристое"><span class="rsvp-check-box"></span><span class="rsvp-check-text">🍾 Игристое</span></label>
-        <label class="rsvp-check-opt"><input type="checkbox" name="drinks" value="Вино белое"><span class="rsvp-check-box"></span><span class="rsvp-check-text">🥂 Вино белое</span></label>
+        <label class="rsvp-check-opt"><input type="checkbox" name="drinks" value="Вино белое"><span class="rsvp-check-box"></span><span class="rsvp-check-text">🥂 Белое вино</span></label>
         <label class="rsvp-check-opt"><input type="checkbox" name="drinks" value="Красное вино"><span class="rsvp-check-box"></span><span class="rsvp-check-text">🍷 Красное вино</span></label>
         <label class="rsvp-check-opt"><input type="checkbox" name="drinks" value="Водка"><span class="rsvp-check-box"></span><span class="rsvp-check-text">🫗 Водка</span></label>
         <label class="rsvp-check-opt"><input type="checkbox" name="drinks" value="Виски"><span class="rsvp-check-box"></span><span class="rsvp-check-text">🥃 Виски</span></label>
@@ -585,10 +585,7 @@
 
     <div class="contact-card">
       <div class="contact-photo-wrap">
-        <img src="https://raw.githubusercontent.com/VladReginaDay/mom-and-dad/refs/heads/main/contact_regina1.png" alt="Регина" onerror="this.style.display='none'">
-        <div class="photo-placeholder">
-          <svg width="30" height="30" opacity="0.55"></svg>
-        </div>
+        <img src="https://raw.githubusercontent.com/VladReginaDay/invitation/refs/heads/main/images/contact_regina.png" alt="Регина" onerror="this.style.display='none'">
       </div>
       <div class="contact-name">Регина</div>
       <span class="contact-role">Невеста</span>
@@ -597,10 +594,7 @@
 
     <div class="contact-card">
       <div class="contact-photo-wrap">
-        <img src="https://raw.githubusercontent.com/VladReginaDay/mom-and-dad/refs/heads/main/contact_vlad1.jpg" alt="Владислав" onerror="this.style.display='none'">
-        <div class="photo-placeholder">
-          <svg width="30" height="30" opacity="0.55"></svg>
-        </div>
+        <img src="https://raw.githubusercontent.com/VladReginaDay/invitation/refs/heads/main/images/contact_vlad.jpg" alt="Владислав" onerror="this.style.display='none'">
       </div>
       <div class="contact-name">Владислав</div>
       <span class="contact-role">Жених</span>
@@ -635,8 +629,7 @@
 
   <div class="goodbye-polaroid reveal">
     <div class="goodbye-photo">
-      <img src="" alt="Владислав и Регина" onerror="this.style.display='none'">
-      <svg width="40" height="40" opacity="0.35"><use href="#icon-user"/></svg>
+      <img src="https://raw.githubusercontent.com/VladReginaDay/invitation/refs/heads/main/images/IMG_0775.JPG" alt="Владислав и Регина" onerror="this.style.display='none'">
     </div>
     <p class="goodbye-caption">До скорой встречи! ❤️</p>
   </div>
@@ -748,8 +741,9 @@
   function scrollProgress(){
     if(!guestsRow) return 0;
     var vh=window.innerHeight, guestsRect=guestsRow.getBoundingClientRect(), bodyRect=body.getBoundingClientRect();
-    if(guestsRect.top>=vh) return 0;
-    var startScroll=guestsRect.top+window.scrollY-vh, endScroll=bodyRect.bottom+window.scrollY-vh*0.22;
+    var appearAt=vh*0.88;
+    if(guestsRect.top>=appearAt) return 0;
+    var startScroll=guestsRect.top+window.scrollY-appearAt, endScroll=bodyRect.bottom+window.scrollY-vh*0.22;
     return Math.max(0,Math.min(1,(window.scrollY-startScroll)/Math.max(endScroll-startScroll,1)));
   }
   function buildPath(){
